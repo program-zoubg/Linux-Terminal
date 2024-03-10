@@ -210,7 +210,9 @@ int run() {
         } else if (strcmp(command, "kill") == 0) {
             int pid = atoi(arg1);
             kill(pid);
-        } else {
+        } else if (strcmp(command, "clear") == 0) {
+        	system("cls");
+		} else {
             printf("Command not found\n");
         }
 

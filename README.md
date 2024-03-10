@@ -39,6 +39,7 @@ g++ main.cpp -o terminal.exe -lShlwapi
 - `cat`
 - `more`
 - `kill`
+- `clear`
 
 已基本实现大部分`Linux`命令
 
