@@ -14,10 +14,10 @@ Release版本编译环境：`TDM-GCC 4.9.2 Release` & `O3优化`
 在**Windows**环境下使用`GCC`编译器编译，或自行写`CMake File`：
 
 ```shell
-g++ main.cpp -o terminal.exe
+g++ main.cpp -o terminal.exe -lShlwapi
 ```
 
-可选的加上`-O3`优化参数
+可选的加上`-O3`优化参数，`-lShlwapi`用于链接终端需要访问的dll文件与头文件
 
 ## 特性
 
@@ -29,6 +29,18 @@ g++ main.cpp -o terminal.exe
 - `rm`
 - `exit`
 - `cd`
+- `shutdown`
+- `cp`
+- `mv`
+- `ifconfig`
+- `wget`
+- `curl`
+- `touch`
+- `cat`
+- `more`
+- `kill`
+
+已基本实现大部分`Linux`命令
 
 支持属性传参，部分调用`Windows`提供的`cmd`程序接口。
 
